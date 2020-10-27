@@ -10,3 +10,8 @@ router.register(r'dishes', views.DishViewSet)
 urlpatterns = [
     path('', include(router.urls)),
 ]
+
+# urlpatterns = [
+#     path(r'^dishes/$', views.DishList.as_view(), name=views.DishList.name),
+#     path(r'^dishes/(?P<pk>[0-9]+)$', views.DishDetail.as_view(), name=views.DishDetail.name),
+# ]
